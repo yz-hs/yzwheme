@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <ul>
+  	<% for (name in theme.menu) { %>
+  	   <li><a href="<%- url_for(theme.menu[name]) %>"><%- __('Menu.' + name)%></a></li>
+    <% } %>
+  </ul>
+</div>
+
+<div class="sidebar">
+	<h2>公告板</h2>
+	<p>本博客支持 Pjax。</p>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1462389947&auto=0&height=32"></iframe>
+</div>

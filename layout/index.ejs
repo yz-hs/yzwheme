@@ -1,0 +1,22 @@
+<div>
+	<h1>主页</h1>
+	<% page.posts.each(function (post) { %>
+	  	<h2>
+			<a href="<%- url_for(post.path) %>"><%= post.title %></a>
+		</h2>
+		<p>
+			内容摘要：<% if(post.excerpt){ %><%- strip_html(post.excerpt) %> <% }else{ %> 没有 qwq。 <% } %>
+		</p>    
+		<p>
+			作者：<%= config.author %>。
+			本文写于 <%= date(post.date, "YYYY 年 MM 月 DD 日") %> 。
+        	<% if(post.top){ %>
+           		本文章被置顶了。
+        	<% } %>
+        	<% if(post.password){ %>
+        		本文章需要密码才能查看 qwq。
+      		<% } %>
+      	</p>
+	<% }) %>
+	<%- partial('paginator') %>
+</div>

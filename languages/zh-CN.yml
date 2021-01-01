@@ -1,0 +1,15 @@
+Menu:
+  主页: HOMEPAGE
+  Archives: ARCHIVES
+  tags: TAGS
+  categories: CATEGOIES
+  about: ABOUT
+  留言: COMMENTS
+  友链: FRIENDLINK
+  项目: PROJECTS
+  sitemap: SITEMAP
+  yznazo: NAZO
+
+Paginator:
+  Prev: Prev
+  Next: Next

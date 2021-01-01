@@ -1,0 +1,7 @@
+<% if (page.path==theme.menu.categories) { %>
+	<%- partial('category') %>
+<% } else if (page.path==theme.menu.tags) { %>
+	<%- partial('tags') %>
+<% } else { %>
+	<%- partial('post') %>
+<% } %>

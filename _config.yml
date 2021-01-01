@@ -1,0 +1,12 @@
+menu:
+  主页: /
+  Archives: archives/index.html
+  tags: tags/index.html
+  categories: categories/index.html
+  about: somepage/about/index.html
+  留言: somepage/chat/index.html
+  友链: somepage/link/index.html
+  项目: somepage/projects/index.html
+  yznazo: yznazo/index.html
+
+responsive: 950
